@@ -91,6 +91,75 @@ ul { list-style: none; }
 
 .nav-reserve:hover { background: var(--terra-dark); }
 
+/* ===== フォトストリップ ===== */
+.photo-strip {
+  background: var(--brown);
+  padding: 0;
+  overflow: hidden;
+}
+
+.photo-strip-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 3px;
+}
+
+.ps-item {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: var(--brown2);
+}
+
+.ps-item.ps-large {
+  grid-row: 1 / 3;
+  aspect-ratio: unset;
+}
+
+.ps-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+  filter: brightness(0.92);
+}
+
+.ps-item:hover img {
+  transform: scale(1.05);
+  filter: brightness(1);
+}
+
+.ps-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 16px 12px;
+  background: linear-gradient(transparent, rgba(44,31,20,0.75));
+  color: var(--cream);
+  font-size: .72rem;
+  letter-spacing: .12em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ps-item:hover .ps-label { opacity: 1; }
+
+@media (max-width: 768px) {
+  .photo-strip-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+  .ps-item.ps-large {
+    grid-column: 1 / 3;
+    grid-row: auto;
+    aspect-ratio: 16/9;
+  }
+  .ps-label { opacity: 1; }
+}
+
 /* ===== ヒーロー ===== */
 .hero {
   min-height: 100vh;
