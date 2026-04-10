@@ -15,14 +15,17 @@
   --border: rgba(44,31,20,0.1);
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-size: 18px; /* ベースフォントサイズ（全体の文字サイズ基準） */
+}
 
 body {
   font-family: 'Noto Sans JP', sans-serif;
   background: var(--cream);
   color: var(--brown);
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.8;
   overflow-x: hidden;
 }
 
@@ -69,7 +72,7 @@ ul { list-style: none; }
 }
 
 .nav-links a {
-  font-size: .68rem;
+  font-size: .8rem;
   letter-spacing: .2em;
   color: var(--muted);
   transition: color 0.2s;
@@ -79,7 +82,7 @@ ul { list-style: none; }
 .nav-links a:hover { color: var(--terra); }
 
 .nav-reserve {
-  font-size: .68rem;
+  font-size: .8rem;
   letter-spacing: .15em;
   color: var(--white);
   background: var(--terra);
@@ -139,7 +142,7 @@ ul { list-style: none; }
   padding: 20px 16px 12px;
   background: linear-gradient(transparent, rgba(44,31,20,0.75));
   color: var(--cream);
-  font-size: .72rem;
+  font-size: .85rem;
   letter-spacing: .12em;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -201,7 +204,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 14px;
   margin-bottom: 36px;
-  font-size: .62rem;
+  font-size: .75rem;
   letter-spacing: .35em;
   color: var(--terra);
   font-weight: 400;
@@ -248,7 +251,7 @@ ul { list-style: none; }
 }
 
 .hero-kinichi {
-  font-size: .62rem;
+  font-size: .75rem;
   letter-spacing: .3em;
   color: var(--muted);
 }
@@ -281,14 +284,14 @@ ul { list-style: none; }
 .hero-info-item:last-child { border-right: none; }
 
 .hero-info-label {
-  font-size: .58rem;
+  font-size: .85rem;
   letter-spacing: .25em;
   color: var(--terra);
   text-transform: uppercase;
 }
 
 .hero-info-val {
-  font-size: .82rem;
+  font-size: .9rem;
   color: var(--brown);
   letter-spacing: .04em;
 }
@@ -301,7 +304,7 @@ ul { list-style: none; }
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  font-size: .58rem;
+  font-size: .85rem;
   letter-spacing: .3em;
   color: var(--muted2);
   writing-mode: vertical-rl;
@@ -336,7 +339,7 @@ ul { list-style: none; }
 }
 
 .ticker-track span {
-  font-size: .68rem;
+  font-size: .8rem;
   letter-spacing: .2em;
   color: rgba(255,255,255,.9);
   font-weight: 400;
@@ -352,7 +355,7 @@ ul { list-style: none; }
 
 /* ===== セクション共通 ===== */
 .section-label {
-  font-size: .6rem;
+  font-size: .75rem;
   letter-spacing: .3em;
   color: var(--terra);
   display: block;
@@ -435,7 +438,7 @@ section { padding: 112px 0; }
 }
 
 .feature p {
-  font-size: .78rem;
+  font-size: .88rem;
   color: var(--muted);
   line-height: 1.9;
 }
@@ -467,7 +470,7 @@ section { padding: 112px 0; }
 }
 
 .menu-subtitle {
-  font-size: .68rem;
+  font-size: .8rem;
   letter-spacing: .2em;
   color: var(--muted);
   margin-bottom: 64px;
@@ -483,7 +486,7 @@ section { padding: 112px 0; }
 .menu-divider { background: rgba(255,255,255,.06); }
 
 .menu-col-label {
-  font-size: .6rem;
+  font-size: .75rem;
   letter-spacing: .35em;
   color: var(--terra-light);
   margin-bottom: 28px;
@@ -528,7 +531,7 @@ section { padding: 112px 0; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-size: .72rem;
+  font-size: .85rem;
   letter-spacing: .15em;
   color: var(--terra-light);
   transition: opacity .2s;
@@ -556,7 +559,7 @@ section { padding: 112px 0; }
 }
 
 .gallery-sub {
-  font-size: .72rem;
+  font-size: .85rem;
   color: var(--muted);
   letter-spacing: .2em;
 }
@@ -595,7 +598,7 @@ section { padding: 112px 0; }
   padding: 13px 32px;
   border: 1px solid rgba(184,92,56,.35);
   color: var(--terra);
-  font-size: .72rem;
+  font-size: .85rem;
   letter-spacing: .15em;
   transition: all .2s;
   border-radius: 2px;
@@ -643,7 +646,7 @@ section { padding: 112px 0; }
 }
 
 .hours-label {
-  font-size: .62rem;
+  font-size: .75rem;
   letter-spacing: .25em;
   color: var(--terra);
 }
@@ -657,7 +660,7 @@ section { padding: 112px 0; }
 }
 
 .access-note {
-  font-size: .72rem;
+  font-size: .85rem;
   color: var(--muted);
   line-height: 1.9;
   margin-bottom: 36px;
@@ -670,7 +673,7 @@ section { padding: 112px 0; }
 }
 
 .access-address {
-  font-size: .82rem;
+  font-size: .9rem;
   color: var(--brown2);
   line-height: 1.9;
   margin-bottom: 8px;
@@ -760,7 +763,7 @@ section { padding: 112px 0; }
 }
 
 .footer-en {
-  font-size: .6rem;
+  font-size: .75rem;
   letter-spacing: .28em;
   color: var(--muted);
 }
